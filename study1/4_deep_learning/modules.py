@@ -62,13 +62,13 @@ def multi_layer_perceptron(input, output_dim=None):
         output_dim=128,
         name="hidden1"
     )
-
+    input_to_hidden1 = tf.nn.relu(input_to_hidden1)
     hidden1_to_hidden2 = dense_layer(
         input_to_hidden1, 
         output_dim=64,
         name="hidden2"
     )
-
+    hidden1_to_hidden2 = tf.nn.relu(hidden1_to_hidden2)
     hidden2_to_output = dense_layer(
         hidden1_to_hidden2, 
         output_dim=10,
