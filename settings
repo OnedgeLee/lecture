@@ -39,8 +39,6 @@ jupyter notebook
 # E: Unable to lock the administration directory (/var/lib/dpkg), is another process using it?
 # E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
 # E: Unable to lock directory /var/lib/apt/lists/ 
-# E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable) 
-# E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 # 
 # Solution)
 # 1. Find pid of apt processes
