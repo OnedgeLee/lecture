@@ -102,3 +102,15 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+study1/2_tensorflow/tmp/ckpt/
+study1/2_tensorflow/logs/
+*.meta
+*.index
+checkpoint
+*.ckpt.data-00000-of-00001
+.gitignore
+4_deep_learning/data/
+.ipynb_checkpoints/
+__pycache__/
