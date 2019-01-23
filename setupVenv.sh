@@ -20,7 +20,38 @@ $HOME/multicamp/bin/python3 -m ipykernel install --user
 cd Download
 git clone https://github.com/aidentify/lecture
 
+# Run jupyternotebook server 
+
+#!/usr/bin/env bash
+
+# Install virtualenv on local pc
+apt-get install virtualenv
+
+# Install python3 in a directory named multicamp
+virtualenv -p python3 ~/multicamp
+
+# Activate "multicamp" virtualenv
+sh "$HOME/multicamp/bin/activate"
+
+# Install tensorflow, matplotlib, ipykernel, jupyter keras music21 gym readchar on the current virtualenv
+$HOME/multicamp/bin/pip3 install --upgrade tensorflow matplotlib ipykernel jupyter keras music21 gym readchar
+
+# Add python3 kernel to Jupyter
+$HOME/multicamp/bin/python3 -m ipykernel install --user
+
+# Download lecture materials in a directory named ~/Download
+cd Download
+git clone https://github.com/aidentify/lecture
+
 # Run jupyternotebook server on local pc 
+#cd lecture
+#jupyter notebook
+
+apt-get install python3-tk
+
+#-----------------------------------------------------#
+# [Ref] Deactivate current virtualenv ("multicamp")
+# On terminal, run "deactivate"on local pc 
 #cd lecture
 #jupyter notebook
 
@@ -36,7 +67,7 @@ apt-get install python3-tk
 #
 # Problem) When installing packages with apt, got message like :
 # E: Could not get lock /var/lib/dpkg/locUnpacking python3-tk (3.5.1-1) ...
-k - open (11: Resource temporarily unavailable)
+# k - open (11: Resource temporarily unavailable)
 # E: Unable to lock the administration directory (/var/lib/dpkg), is another process using it?
 # E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
 # E: Unable to lock directory /var/lib/apt/lists/ 
