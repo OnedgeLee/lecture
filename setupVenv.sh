@@ -22,12 +22,6 @@ git clone https://github.com/aidentify/lecture
 # Run jupyternotebook server on local pc 
 #cd lecture
 #jupyter notebook
-#-----------------------------------------------------#
-# [Ref] Deactivate current virtualenv ("multicamp")
-# On terminal, run "deactivate"on local pc 
-#cd lecture
-#jupyter notebook
-
 apt-get install python3-tk
 
 #-----------------------------------------------------#
