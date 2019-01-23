@@ -1,6 +1,5 @@
 
 #!/usr/bin/env bash
-
 # Install virtualenv on local pc
 apt-get install virtualenv
 
